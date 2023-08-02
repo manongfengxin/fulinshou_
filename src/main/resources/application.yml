@@ -1,0 +1,35 @@
+server:
+  port: 8084
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///xm2_fulinshou3?serverTimezone=GMT%2B8&characterEncoding=utf-8
+    username: root
+    password: shuai
+  application:
+    name: fulinshou
+  freemarker:
+    cache: false
+
+  jackson: #json时间格式
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+  # redis的配置
+#  redis:
+#    host: 127.0.0.1
+#    port: 6379
+
+
+wxmini:
+  appid: 'wx3cb31583481cd5c8'
+  secret: '54e8152a4268b25461ff666b74420c24'
+
+mybatis-plus:
+  configuration: # sql日志，会在控制台打印日志信息
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+
+
